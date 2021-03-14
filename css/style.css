@@ -1,55 +1,71 @@
 body {
-    background: #333;
+    background: white;
     color: aliceblue;
 }
 
 header {
+    background-image: url("fons_banner.jpg");
+    background-size: 100%;
+    background-position: center;
     width: auto;
     margin: 10px;
 }
 
 nav {
-    background: darkblue;
     width: auto;
-    border: black solid 10px;
     text-align: center;
     display: flex;
 }
 
 .logo {
-    background-color: coral;
     width: auto;
     margin: 10px;
     padding: 3%;
+    display: block;
+}
+
+.img_logo {
+    width: auto;
+    object-fit: contain;
 }
 
 .menu {
-    background-color: coral;
     width: 80%;
     margin: 10px;
     padding: 3%;
+    opacity: 0.5;
+}
+
+.menu_nav {
+    margin: 15px;
+    text-decoration: none;
 }
 
 .media {
-    background-color: coral;
     width: auto;
     margin: 10px;
     padding: 3%;
+}
+
+a:hover {
+    color: red;
 }
 
 .banner {
-    background: orange;
-    color: beige;
-    width: auto;
-    border: black solid 10px;
-    text-align: center;
-}
-
-.banner_contenido {
-    background-color: beige;
+    position: relative;
     width: auto;
     margin: 10px;
     padding: 3%;
+}
+
+.banner_contenido {
+    background-color: rgb(202, 200, 200);
+    text-align: center;
+    color: red;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+    opacity: 50%;
 }
 
 main {
@@ -59,10 +75,9 @@ main {
 }
 
 .main_box {
-    background: darkblue;
+    background: whitesmoke;
     width: 75%;
-    padding: 3%;
-    border: black solid 10px;
+    border: gray solid 5px;
 }
 
 .colum_box {
@@ -70,35 +85,65 @@ main {
 }
 
 .colum {
+    background-color: rgb(226, 224, 224);
     width: 100%;
+    border: gray solid 5px;
+}
+
+.colum_content_img {
+    background-color: rgb(226, 224, 224);
+    color: white;
+    width: auto;
+    margin: 10px 10px 0 10px;
+    padding: 5px 5px 0 5px;
+    position: relative;
+    display: inline-block;
+    text-align: bottom;
+}
+
+.texto_encima_img {
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
 }
 
 .colum_content {
-    background-color: blue;
+    background-color: rgb(226, 224, 224);
+    color: #333;
     width: auto;
-    margin: 10px;
-    padding: 3%;
+    margin: 0 10px 10px 10px;
+    padding: 0 1% 1% 1%;
+}
+
+.img_article {
+    object-fit: cover;
+    width: 100%;
+}
+
+h2 {
+    background-color: rgb(253, 8, 159);
+    color: white;
+    width: 100%;
+}
+
+.mas {
+    opacity: 75%;
 }
 
 .footer_colum {
-    background: rgb(127, 127, 243);
+    background-color: rgb(226, 224, 224);
+    color: #333;
     width: auto;
     margin: 10px;
     padding: 3%;
 }
 
 .box_side {
-    background: red;
+    background-color: rgb(226, 224, 224);
     width: 25%;
     padding: 3%;
-    border: 10px solid black;
-}
-
-.content_side {
-    background-color: beige;
-    width: auto;
-    margin: 10px;
-    padding: 3%;
+    border: gray solid 10px;
 }
 
 footer {
@@ -108,6 +153,7 @@ footer {
     margin: 10px;
     padding: 3%;
     border: 10px solid black;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
