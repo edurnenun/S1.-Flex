@@ -1,0 +1,197 @@
+body {
+    background: #333;
+    color: aliceblue;
+}
+
+header {
+    width: auto;
+    margin: 10px;
+}
+
+nav {
+    background: darkblue;
+    width: auto;
+    border: black solid 10px;
+    text-align: center;
+    display: flex;
+}
+
+.logo {
+    background-color: coral;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+.menu {
+    background-color: coral;
+    width: 80%;
+    margin: 10px;
+    padding: 3%;
+}
+
+.media {
+    background-color: coral;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+.banner {
+    background: orange;
+    color: beige;
+    width: auto;
+    border: black solid 10px;
+    text-align: center;
+}
+
+.banner_contenido {
+    background-color: beige;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+main {
+    width: auto;
+    margin: 10px;
+    display: flex;
+}
+
+.main_box {
+    background: darkblue;
+    width: 75%;
+    padding: 3%;
+    border: black solid 10px;
+}
+
+.colum_box {
+    display: flex;
+}
+
+.colum {
+    width: 100%;
+}
+
+.colum_content {
+    background-color: blue;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+.footer_colum {
+    background: rgb(127, 127, 243);
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+.box_side {
+    background: red;
+    width: 25%;
+    padding: 3%;
+    border: 10px solid black;
+}
+
+.content_side {
+    background-color: beige;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+}
+
+footer {
+    background: goldenrod;
+    color: green;
+    width: auto;
+    margin: 10px;
+    padding: 3%;
+    border: 10px solid black;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        width: auto;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main_box {
+        border: yellow solid 10px;
+        width: auto;
+    }
+    .colum_box {
+        display: flex;
+    }
+    .colum {
+        width: 100%;
+    }
+    .colum_content {
+        background-color: blue;
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+    .footer_colum {
+        background: rgb(127, 127, 243);
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+    .box_side {
+        background: red;
+        width: auto;
+        padding: 3%;
+        border: 10px solid yellow;
+    }
+    .content_side {
+        background-color: beige;
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        background: #333;
+        color: rgb(6, 6, 97);
+    }
+    header {
+        background: rgb(6, 6, 97);
+        color: #333;
+        width: auto;
+        margin: 10px;
+    }
+    nav {
+        background: darkblue;
+        width: auto;
+        border: black solid 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        background-color: coral;
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+    .menu {
+        background-color: coral;
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+    .media {
+        background-color: coral;
+        width: auto;
+        margin: 10px;
+        padding: 3%;
+    }
+    .colum_box {
+        display: flex;
+        flex-direction: column;
+    }
+}
